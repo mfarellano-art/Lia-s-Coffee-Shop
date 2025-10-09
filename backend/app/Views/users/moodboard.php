@@ -50,7 +50,7 @@
   <section class="logos">
     <h2>☕ Logos</h2>
     <div class="logo-set">
-      <img src="/images/logo_circle.png" alt="Circle Logo" class="circle-logo">
+      <img src="/images/logo.png" alt="Circle Logo" class="circle-logo">
       <img src="/images/logo_square.png" alt="Square Logo" class="square-logo">
     </div>
   </section>

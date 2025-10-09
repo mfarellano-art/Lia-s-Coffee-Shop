@@ -1,237 +1,152 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #FAF6F2;
-  color: #3A2C1A;
-  margin: 0;
-  padding: 0;
+/* ===================================================
+   🔹 HEADER & FOOTER (Reusable)
+=================================================== */
+.site-header {
+  background-color: #fff;
+  border-bottom: 2px solid #E6D5C3;
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-h1, h2, h3 {
-  font-family: 'Poppins', sans-serif;
-  color: #6F4E37;
-}
-
-/* --- Auth Pages --- */
-.auth-body {
+.site-header .logo {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: #FAF6F2;
+  gap: 12px;
 }
 
-.auth-container {
-  background: white;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  width: 350px;
+.site-header .logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.site-header .nav-links a {
+  text-decoration: none;
+  color: #6F4E37;
+  font-weight: 600;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+.site-header .nav-links a:hover {
+  color: #C49A6C;
+}
+
+.site-footer {
+  background-color: #6F4E37;
+  color: #fff;
   text-align: center;
+  padding: 25px 10px;
+  font-size: 0.95rem;
 }
 
-.auth-container input {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #C49A6C;
-  border-radius: 8px;
+/* ===================================================
+   🔹 BUTTON SET (Button1–4)
+=================================================== */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px 0;
 }
 
-/* --- Buttons --- */
+/* Button 1 - Primary */
 .btn-primary {
   background-color: #6F4E37;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 25px;
   border: none;
-  border-radius: 8px;
+  border-radius: 25px;
+  font-weight: 600;
   cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
 }
+.btn-primary:hover { background-color: #5c3f2e; transform: translateY(-2px); }
 
+/* Button 2 - Secondary */
 .btn-secondary {
   background-color: #C49A6C;
   color: #fff;
-  padding: 10px 20px;
+  padding: 12px 25px;
   border: none;
-  border-radius: 8px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
 }
+.btn-secondary:hover { background-color: #b18357; transform: translateY(-2px); }
 
+/* Button 3 - Bordered */
 .btn-bordered {
   border: 2px solid #6F4E37;
   color: #6F4E37;
   background: transparent;
-  padding: 10px 20px;
-  border-radius: 8px;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-bordered:hover {
+  background-color: #6F4E37;
+  color: white;
+  transform: translateY(-2px);
 }
 
+/* Button 4 - Disabled */
 .btn-disabled {
-  background: #ccc;
-  color: #666;
-  padding: 10px 20px;
-  border-radius: 8px;
+  background: #d9d9d9;
+  color: #777;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  border: none;
+  opacity: 0.7;
   cursor: not-allowed;
 }
 
-/* --- Moodboard --- */
-.colors {
-  display: flex;
-  gap: 1rem;
-}
-
-.color-swatch {
-  padding: 40px;
-  color: white;
-  border-radius: 8px;
-  text-align: center;
-  width: 100px;
-}
-
-.card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 20px;
-  width: 250px;
-  text-align: center;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.logo-set img {
-  width: 100px;
-  margin: 10px;
-  border-radius: 50%;
-}
-
-.square-logo {
-  border-radius: 10px;
-}
-
-/* --- Roadmap --- */
-.phase {
-  background: white;
-  margin: 20px;
-  padding: 20px;
-  border-left: 6px solid #6F4E37;
-  border-radius: 8px;
-}
-
-/* === LANDING PAGE === */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
-  background-color: #FAF6F2;
-}
-
-.header .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.header .logo img {
-  width: 50px;
-  border-radius: 50%;
-}
-
-.nav-links a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #6F4E37;
-  font-weight: 600;
-}
-
-.nav-links a:hover {
-  color: #C49A6C;
-}
-
-/* Hero Section */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 80px 100px;
-  background-color: #FAF6F2;
-}
-
-.hero-content {
-  max-width: 500px;
-}
-
-.hero-content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.hero-content p {
-  font-size: 1.1rem;
-  margin-bottom: 25px;
-}
-
-.hero-image img {
-  width: 400px;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
-
-/* Favorites Section */
-.favorites {
-  text-align: center;
-  padding: 80px 60px;
-  background-color: #fff;
-}
-
-.menu-grid {
+/* ===================================================
+   🔹 CARD SET
+=================================================== */
+.card-set {
   display: flex;
   justify-content: center;
-  gap: 2rem;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  gap: 30px;
+  margin: 50px 0;
 }
 
-.menu-card {
-  background: #FAF6F2;
-  padding: 20px;
+.card-sample {
+  background-color: #fff;
   border-radius: 15px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   width: 250px;
+  text-align: center;
+  padding: 25px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-sample:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
-.menu-card img {
+.card-sample img {
   width: 100%;
   border-radius: 10px;
-}
-
-.menu-card h3 {
-  margin-top: 10px;
-}
-
-/* CTA Section */
-.cta {
-  text-align: center;
-  background-color: #6F4E37;
-  color: white;
-  padding: 80px 40px;
-}
-
-.cta h2 {
-  font-size: 2rem;
   margin-bottom: 15px;
 }
 
-.cta p {
-  margin-bottom: 20px;
+.card-sample h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  color: #6F4E37;
+  margin-bottom: 10px;
 }
 
-/* Footer */
-.footer {
-  background-color: #C49A6C;
-  color: white;
-  text-align: center;
-  padding: 20px;
+.card-sample p {
+  color: #5c4635;
+  font-size: 0.95rem;
 }
