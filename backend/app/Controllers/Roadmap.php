@@ -8,6 +8,6 @@ class Roadmap extends BaseController
 {
     public function index()
     {
-        return view('user/roadmap');
+        return view('users/roadmap');
     }
 }

@@ -8,6 +8,6 @@ class Moodboard extends BaseController
 {
     public function index()
     {
-        return view('user/moodboard');
+        return view('users/moodboard');
     }
 }

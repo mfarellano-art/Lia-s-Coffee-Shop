@@ -2,12 +2,12 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\Controller;
+use App\Controllers\BaseController;
 
-class Signup extends Controller
+class Signup extends BaseController
 {
     public function index()
     {
-        return view('signup'); // app/Views/signup.php
+        return view('users/signup'); // app/Views/users/signup.php
     }
 }

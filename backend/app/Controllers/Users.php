@@ -2,32 +2,32 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\Controller;
+use App\Controllers\BaseController;
 
-class Users extends Controller
+class Users extends BaseController
 {
     public function index()
     {
-        return view('index');
+        return view('users/landing');
     }
 
     public function login()
     {
-        return view('login');
+        return view('users/login');
     }
 
     public function signup()
     {
-        return view('signup');
+        return view('users/signup');
     }
 
     public function roadmap()
     {
-        return view('roadmap');
+        return view('users/roadmap');
     }
 
     public function moodboard()
     {
-        return view('moodboard');
+        return view('users/moodboard');
     }
 }
