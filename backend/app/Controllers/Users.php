@@ -30,4 +30,8 @@ class Users extends BaseController
     {
         return view('users/moodboard');
     }
+    public function landing()
+    {
+    return view('user/landing');
+    }
 }
