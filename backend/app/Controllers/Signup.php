@@ -4,10 +4,10 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 
-class Login extends Controller
+class Signup extends Controller
 {
     public function index()
     {
-        return view('login'); // app/Views/login.php
+        return view('signup'); // app/Views/signup.php
     }
 }
