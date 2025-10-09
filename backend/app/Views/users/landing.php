@@ -30,7 +30,7 @@
       <a href="/signup" class="btn-primary">Get Started</a>
     </div>
     <div class="hero-image">
-      <img src="/images/coffee_hero.png" alt="Cup of Coffee">
+      <img src="/images/hero.png" alt="Cup of Coffee">
     </div>
   </section>
 
@@ -39,17 +39,17 @@
     <h2>Our Favorites</h2>
     <div class="menu-grid">
       <div class="menu-card">
-        <img src="/images/latte.jpg" alt="Latte">
+        <img src="/images/latte.png" alt="Latte">
         <h3>Caramel Latte</h3>
         <p>₱140 — Smooth espresso blended with creamy caramel.</p>
       </div>
       <div class="menu-card">
-        <img src="/images/cappuccino.jpg" alt="Cappuccino">
+        <img src="/images/cappuccino.png" alt="Cappuccino">
         <h3>Classic Cappuccino</h3>
         <p>₱130 — Frothy, rich, and perfectly balanced.</p>
       </div>
       <div class="menu-card">
-        <img src="/images/mocha.jpg" alt="Mocha">
+        <img src="/images/mocha.png" alt="Mocha">
         <h3>Dark Mocha</h3>
         <p>₱150 — Chocolate-infused indulgence in every sip.</p>
       </div>
